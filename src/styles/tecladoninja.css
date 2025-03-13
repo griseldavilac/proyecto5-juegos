@@ -1,0 +1,97 @@
+/* Fondo con la imagen del logo */
+body {
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  background: url('../assets/teclado-ninja-bg.png.webp') no-repeat center center
+    fixed;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Botón de volver */
+#volver {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#volver:hover {
+  background-color: gray;
+  transform: scale(1.1);
+}
+
+/* Contenedor del juego */
+.contenedor-juego {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border: 3px solid #ffcc00;
+}
+
+/* Palabra a escribir */
+#palabra {
+  font-size: 2rem;
+  font-weight: bold;
+  background: #f4e1c1;
+  color: #5a3e1b;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* Input */
+#entrada {
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  text-align: center;
+  outline: none;
+  width: 250px;
+  background: #3b2c18;
+  color: white;
+}
+
+#entrada::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Puntuación y récord */
+#puntuacion,
+#record {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Efecto de urgencia cuando el tiempo es bajo */
+.peligro {
+  color: #ff4444;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+  .contenedor-juego {
+    width: 90%;
+  }
+
+  #entrada {
+    width: 200px;
+  }
+}
