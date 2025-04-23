@@ -2,8 +2,6 @@
 body {
   font-family: 'Cinzel', serif;
   text-align: center;
-  background: url('../assets/teclado-ninja-bg.png.webp') no-repeat center center
-    fixed;
   background-size: cover;
   color: #fff;
   height: 100vh;
@@ -95,3 +93,12 @@ body {
     width: 200px;
   }
 }
+
+/*
+CULPABLE DE MIS MALES
+body.juego-activo {
+  background: url('../assets/teclado-ninja-bg.png.webp') no-repeat center center
+    fixed !important;
+  background-size: cover !important;
+  font-family: 'Cinzel', serif !important;
+}*/
